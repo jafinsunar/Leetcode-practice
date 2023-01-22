@@ -17,7 +17,7 @@ int sumElement(int arr[],int n)
     //Your code here
    for(int i=0;i<n;i++){
        x = x+arr[i];
-       //cout << x++;
+       
    }
     return x;
     
