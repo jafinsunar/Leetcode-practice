@@ -8,9 +8,18 @@ class Solution{
     int getSum(int a[], int n) {
         // Your code goes here
         int sum=0;
-        for(int i =0;i<n;i++){
-        sum = sum + a[i];
+        // for(int i =0;i<n;i++){
+        // sum = sum + a[i];
+        // }
+        int i=0;
+        while(i<n){
+            sum+=a[i];
+            i++;
         }
+        
+        // for(int i :a){
+        //     sum+=i;
+        // }
         return sum;
         
     } 
