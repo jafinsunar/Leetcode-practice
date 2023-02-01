@@ -17,6 +17,7 @@ public:
         for(int i=1 ; i<=N;i++) {
             
             div = N/i;
+      //      cout<<"for "<<i<<" " <<div<<endl;
              sum = sum + (div*i);
                 
             
