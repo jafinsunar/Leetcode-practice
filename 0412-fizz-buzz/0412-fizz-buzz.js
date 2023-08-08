@@ -1,24 +1,15 @@
-class Solution {
-public:
-    vector<string> fizzBuzz(int n) {
-        
-        vector<string>ans;
-        string temp="";
-        for(int i=1;i<=n;i++) {
-if(i%3==0 && i%5==0){
-    ans.push_back("FizzBuzz");
-    
-}else if (i%3==0){
-    ans.push_back("Fizz");
-}else if (i%5==0){
-    ans.push_back("Buzz");
-}
-            else{
-                temp=to_string(i);
-                ans.push_back(temp);
-            }
-            }
-        return ans;
-        
+const fizzBuzz = (n) => {
+    let res = []
+
+    for (let i = 1; i <= n; i++){
+        let string = ''
+        if (i % 3 === 0) string += 'Fizz'
+        if (i % 5 === 0) string += 'Buzz'
+
+        if (string === '') string += i
+        res.push(string)
     }
+
+
+    return res
 };
